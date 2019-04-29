@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstPage"
+    android:background="@drawable/gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/world"
+        android:alpha="0.7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:alpha="0"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Welcome..!!"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="46dp"
+        android:id="@+id/welcomeTitle"
+        />
+
+</FrameLayout>

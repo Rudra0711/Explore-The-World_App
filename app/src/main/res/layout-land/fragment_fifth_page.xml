@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FifthPage">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can also search for any place on the app\nJust search for the name of the place along with the area and the city in which it is located for getting your desired result..."
+        android:padding="8dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:textSize="14dp"
+        android:id="@+id/fifthTextView"/>
+
+    <TextView
+        android:id="@+id/descThirdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="A blue marker will appear on the place you searched for"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifthTextView" />
+
+    <ImageView
+        android:id="@+id/withoutAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@+id/descThirdTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:src="@drawable/searched_withoutaddress"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descThirdTextView" />
+
+    <TextView
+        android:id="@+id/descThirdTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/withoutAddress"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Tap on the marker to display the address of the location"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withoutAddress" />
+
+    <ImageView
+        android:id="@+id/withAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@+id/descThirdTextView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:src="@drawable/searched_withaddress"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descThirdTextView2" />
+
+    <TextView
+        android:id="@+id/intotheApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="right"
+        android:padding="8dp"
+        android:text="Explore the world...->"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withAddress" />
+
+    <TextView
+        android:id="@+id/previousFifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="Previous"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withAddress" />
+
+</android.support.constraint.ConstraintLayout>

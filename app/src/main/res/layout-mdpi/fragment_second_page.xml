@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondPage"
+    android:background="@drawable/gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Before you get started with the app, let us take you through a quick tutorial\n\nSo without wasting any further time, LET'S GET STARTED....\n\n\n"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal|center"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:padding="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started  >"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/getStarted"/>
+
+</FrameLayout>

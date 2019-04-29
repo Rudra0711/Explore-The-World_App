@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thirdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ThirdPage">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/descThirdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="The rose marker in the map shows your current location."
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/withoutAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_below="@+id/descThirdTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:src="@drawable/curr_"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descThirdTextView" />
+
+    <TextView
+        android:id="@+id/descThirdTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/withoutAddress"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Tap on the marker to display the address of your current location"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withoutAddress" />
+
+    <ImageView
+        android:id="@+id/withAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_below="@+id/descThirdTextView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+        android:src="@drawable/curr_address"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descThirdTextView2" />
+
+    <TextView
+        android:id="@+id/noteThird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/withAddress"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="Note : Make sure that you are not inside your home, any building or anywhere indoors as the app might fail to locate your current location for the first time"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/withAddress" />
+
+    <TextView
+        android:id="@+id/nextThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="right"
+        android:padding="2dp"
+        android:text="Next->"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteThird" />
+
+    <TextView
+        android:id="@+id/previousThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="left"
+        android:padding="2dp"
+        android:text="Previous"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteThird" />
+
+</android.support.constraint.ConstraintLayout>
